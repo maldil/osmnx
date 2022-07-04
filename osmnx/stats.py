@@ -61,7 +61,7 @@ def streets_per_node_avg(G):
         average count of streets per node
     """
     spn_vals = streets_per_node(G).values()
-    return sum(spn_vals) / len(G.nodes)
+    return np.mean(spn_vals)
 
 
 def streets_per_node_counts(G):
